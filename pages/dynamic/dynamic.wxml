@@ -1,0 +1,40 @@
+<view class='body'>
+  <!-- <view class="header">
+    目录
+  </view>
+  <navigator url="/pages/dynamic/emsReservation/emsReservation" hover-class="navigator-hover">
+    <view class="title">
+      1. EMS快递单预约
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/wordReservation/wordReservation" hover-class="navigator-hover">
+    <view class="title">
+      2. 文书预约
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/emsPrint/emsPrint" hover-class="navigator-hover">
+    <view class="title">
+      3. EMS快递单打印
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/wordPrint/wordPrint" hover-class="navigator-hover">
+    <view class="title">
+      4. 文书打印
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/login/login" hover-class="navigator-hover">
+    <view class="title">
+      5. 用户登陆
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/devices/devices" hover-class="navigator-hover">
+    <view class="title">
+      6. 设备监控
+    </view>
+  </navigator>
+  <navigator url="/pages/dynamic/analysis/analysis" hover-class="navigator-hover">
+    <view class="title">
+      7. 统计分析
+    </view>
+  </navigator> -->
+</view>

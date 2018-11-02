@@ -1,0 +1,33 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #ccc;
+} 
+.body {
+  padding: 10px;
+}
+.line {
+  padding-top: 10rpx;
+}
+
+.content {
+  text-indent: 2em;
+  font-size: 14px;
+}
+.pic  {
+  width: 100%;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.pic image {
+  width: 100%;
+}
+.text {
+  text-align: center;
+}

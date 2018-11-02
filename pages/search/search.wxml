@@ -1,0 +1,28 @@
+<import src="/libs/template/publicTable.wxml"/>
+<view class="header">
+  <view class="datePicker">
+    <view hover-class="navigator-hover">
+    <picker bindchange="systemChange" value="{{index}}" range  ="{{system}}">
+      <view class="picker search-btn">
+        系统：{{system[index]}}
+      </view>
+    </picker>
+    </view>
+  </view>
+  <view class="datePicker">
+    <view hover-class="navigator-hover">
+      <picker mode="date" 
+      value="{{startTime}}" 
+      start="2017-10-01" 
+      end="{{today}}" 
+      fields="month"
+      bindchange="bindDateChange">
+        <view class="picker search-btn1">
+          日期: {{startTime}}
+        </view>
+      </picker>
+    </view>
+  </view>
+</view>
+<view class='line'></view>
+<template is = "publicTable" data = "{{useStatusList}}"></template> 

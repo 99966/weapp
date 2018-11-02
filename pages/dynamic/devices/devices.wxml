@@ -1,0 +1,7 @@
+<!--pages/dynamic/devices/devices.wxml-->
+<import src="/libs/template/publicDetail.wxml"/>
+<view class="body">
+  <block  wx:for="{{items}}" wx:key = "*this" wx:for-item = "item">
+      <template is = "publicDetail" data = "{{item}}"></template> 
+  </block>
+</view>

@@ -1,0 +1,13 @@
+<template name="publicDetail">
+  <view>
+    <view class="content">
+      <text>{{item.content}}</text>
+    </view>
+    <view class="pic">
+      <image mode="scaleToFill" src="{{item.imgUrl}}" ></image> 
+    </view>
+    <view class="text">
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</template>

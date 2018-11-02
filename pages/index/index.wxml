@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="swiper-wrp">
+  <swiper class="swiper"
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" 
+    duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{}}">
+      <swiper-item >
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航部分  -->
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item w-item1">
+      <navigator url="/pages/dynamic/emsReservation/emsReservation" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/eat.png" /> -->
+          <text>EMS预约</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="flex-item w-item3">
+      <navigator url="/pages/dynamic/wordReservation/wordReservation" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/travel.png" /> -->
+          <text>文书预约</text>
+        </view>
+      </navigator>
+
+    </view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item w-item4 w-borderRadius">
+      <navigator url="/pages/dynamic/login/login" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/shop.png" /> -->
+          <text>用户登陆</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="flex-item w-item5">
+      <navigator url="/pages/dynamic/devices/devices" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/game.png" /> -->
+          <text>设备监控</text>
+        </view>
+      </navigator>
+
+    </view>
+    <view class="flex-item w-item6 w-borderRadius">
+      <navigator url="/pages/dynamic/analysis/analysis" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/game.png" /> -->
+          <text>统计分析</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item w-item4">
+      <navigator url="/pages/dynamic/emsPrint/emsPrint" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/walk.png" style='width:90rpx' /> -->
+          <text>EMS打印</text>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="flex-item w-item6">
+      <navigator url="/pages/dynamic/wordPrint/wordPrint" hover-class="navigator-hover">
+        <view class="w-nav">
+          <!-- <image class="hotel" src="../../image/home/travel.png" /> -->
+          <text>文书打印</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

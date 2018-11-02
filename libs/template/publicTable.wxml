@@ -1,0 +1,83 @@
+<template name="publicTable">
+  <view class="table">
+  <view class="tr bg-w">
+    <block wx:for="{{useStatusList.title}}" wx:key="{{}}">
+      <view class="th">{{item}}</view>
+    </block>
+  </view>
+
+  <!-- 一体机 -->
+  <block wx:if="{{useStatusList.type == 0}}">
+    <block wx:for="{{useStatusList.data}}" wx:key="{{}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.FYMC}}</view>
+        <view class="td">{{item.EMSDY}}</view>
+        <view class="td">{{item.WSDY}}</view>
+        <view class="td">{{item.ZCS}}</view>
+        <view class="td">{{item.DLCS}}</view>
+        <view class="td">{{item.YYCS}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.FYMC}}</view>
+        <view class="td">{{item.EMSDY}}</view>
+        <view class="td">{{item.WSDY}}</view>
+        <view class="td">{{item.ZCS}}</view>
+        <view class="td">{{item.DLCS}}</view>
+        <view class="td">{{item.YYCS}}</view>
+      </view>
+    </block>  
+  </block>
+
+  <!-- 应用数据平台 -->
+  <block wx:if="{{useStatusList.type == 1}}">
+    <block wx:for="{{useStatusList.data}}" wx:key="{{}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.LOGIN}}</view>
+        <view class="td">{{item.SPTS}}</view>
+        <view class="td">{{item.ZTFX}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.LOGIN}}</view>
+        <view class="td">{{item.SPTS}}</view>
+        <view class="td">{{item.ZTFX}}</view>
+      </view>
+    </block>  
+  </block>
+
+  <!-- 办公办案平台 -->
+  <block wx:if="{{useStatusList.type == 2}}">
+    <block wx:for="{{useStatusList.data}}" wx:key="{{}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.LOGIN}}</view>
+        <view class="td">{{item.HJ}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.LOGIN}}</view>
+        <view class="td">{{item.HJ}}</view>
+      </view>
+    </block>  
+  </block>
+
+  <!-- 案件信息管理 -->
+  <block wx:if="{{useStatusList.type == 3}}">
+    <block wx:for="{{useStatusList.data}}" wx:key="{{}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.KTCS}}</view>
+        <view class="td">{{item.WSQPCS}}</view>
+        <view class="td">{{item.HJ}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.BM}}</view>
+        <view class="td">{{item.KTCS}}</view>
+        <view class="td">{{item.WSQPCS}}</view>
+        <view class="td">{{item.HJ}}</view>
+      </view>
+    </block>  
+  </block>
+  </view>
+</template>

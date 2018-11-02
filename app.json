@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dynamic/dynamic",
+    "pages/search/search",
+    "pages/dynamic/login/login",
+    "pages/dynamic/emsReservation/emsReservation",
+    "pages/dynamic/wordReservation/wordReservation",
+    "pages/dynamic/emsPrint/emsPrint",
+    "pages/dynamic/wordPrint/wordPrint",
+    "pages/dynamic/devices/devices",
+    "pages/dynamic/analysis/analysis"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wechat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#f13b4c",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/footer/home-no.png",
+        "selectedIconPath": "image/footer/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "image/footer/guid-no.png",
+        "selectedIconPath": "image/footer/guid.png",
+        "text": "使用情况"
+      }
+    ]
+  }
+}
