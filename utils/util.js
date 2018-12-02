@@ -15,15 +15,21 @@ const formatNumber = n => {
 }
 
 const parseDate = date => {
-  var year = new Date().getFullYear();
-  var monthParse = new Date().getMonth();
-  var month = '';
-  if (monthParse == 0 || monthParse == 11) {
-    monthParse += 1
+  var Nowdate = new Date();
+  var vYear = Nowdate.getFullYear();
+  var vMon = Nowdate.getMonth() + 1;
+  if (vMon == 1) {
+    vYear = Nowdate.getFullYear() - 1;
+    vMon = 12;
+  } else {
+    vMon = vMon - 1;
   }
-  monthParse < 10 ? month = '0' + monthParse : monthParse
-  console.log(monthParse)
-  return year + '-' + monthParse
+  if (vMon < 10) {
+    vMon = "0" + vMon;
+  }
+  var date = vYear + "-" + vMon;
+  console.log(date)
+  return date;
 }
 
 module.exports = {
