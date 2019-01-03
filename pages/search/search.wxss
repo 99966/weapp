@@ -70,3 +70,10 @@
 .navigator-hover{
   opacity: .8;
 }
+
+.no-data {
+  text-align: center;
+  font-size: 16px;
+  height: 100rpx;
+  line-height: 100rpx;
+}

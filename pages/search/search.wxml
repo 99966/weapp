@@ -25,4 +25,4 @@
   </view>
 </view>
 <view class='line'></view>
-<template is = "publicTable" data = "{{useStatusList}}"></template> 
+<template is = "publicTable" data = "{{useStatusList, hasData}}"></template> 

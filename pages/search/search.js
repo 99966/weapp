@@ -16,7 +16,8 @@ Page({
     startTime:'',
     today:'',
     index: 0,
-    dateTime: ''
+    dateTime: '',
+    hasData: false
   },
 
   /**
@@ -30,7 +31,6 @@ Page({
     });
     var _this=this;
     var date = utils.parseDate()
-    console.log(utils.parseDate())
     this.setData({
       startTime: date,
       today:date,
@@ -49,10 +49,9 @@ Page({
       success: function (res) {
         wx.hideToast();
         var data = res.data;
-        // console.log(data)
-        // data.sort(_this.compare('order'))
         _this.setData({
-          useStatusList: data
+          useStatusList: data,
+          hasData: utils.isTrue(res.data)
         })
       }
     })
@@ -65,7 +64,6 @@ Page({
       duration: 10000
     });
     var _this = this;
-    console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value
     })
@@ -76,14 +74,15 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       data: {
-        date: this.data.dateTime,
+        date: this.data.startTime,
         xtbh: this.data.index
       },
       success: function (res) {
         wx.hideToast();
         var data = res.data;
         _this.setData({
-          useStatusList: data
+          useStatusList: data,
+          hasData: utils.isTrue(res.data) 
         })
       }
     })
@@ -96,7 +95,6 @@ Page({
       duration: 10000
     });
     var _this = this;
-    // console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       startTime: e.detail.value,
       hiddenLoading: false
@@ -114,7 +112,8 @@ Page({
         wx.hideToast();
         var data = res.data;
         _this.setData({
-          useStatusList: data
+          useStatusList: data,
+          hasData: utils.isTrue(res.data)
         })
       }
     })

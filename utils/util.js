@@ -28,11 +28,23 @@ const parseDate = date => {
     vMon = "0" + vMon;
   }
   var date = vYear + "-" + vMon;
-  console.log(date)
+  // console.log(date)
   return date;
+}
+
+const isTrue = data => {
+  // console.log(data.data.length)
+  if (data.data.length) {
+    console.log(true)
+    return true
+  } else {
+    console.log(false)
+    return false
+  }
 }
 
 module.exports = {
   formatTime: formatTime,
-  parseDate: parseDate
+  parseDate: parseDate,
+  isTrue
 }
